@@ -1,0 +1,74 @@
+/*****************************************************************************/
+/* main: Style */
+/*****************************************************************************/
+html, body {
+	padding: 0;
+}
+
+body {
+	background-color: #FFF9F7;
+}
+
+section {
+	padding-top: 20px;
+}
+
+#login-buttons a, .accounts-dialog a {
+	text-decoration: none;
+}
+
+#login-dropdown-list {
+	right: 20px !important;
+}
+
+#login-buttons.login-buttons-dropdown-align-right #login-dropdown-list {
+  background-color: #ffccbc;
+  border: 1px solid #ffccbc;
+  color: rgb(61, 61, 61);
+}
+
+#login-buttons .login-button, .accounts-dialog .login-button {
+	background: #8C5D53;
+	border: 1px solid #8C5D53;
+}
+
+#login-buttons .login-button:hover, .accounts-dialog .login-button:hover {
+	background: #4e342e;
+}
+
+#login-buttons input, .accounts-dialog input {
+	border: 1px solid #4e342e !important;
+}
+
+.main {
+}
+
+.highlight {
+	background-color: yellow;
+}
+
+.comment-box .name {
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+.comment-box .message {
+	padding-top: 5px;
+	margin-top: 0;
+}
+
+.submit-comment {
+	position: absolute;
+	top: 50px;
+	font-size: 25px;
+	color: green;
+	cursor: pointer;
+}
+
+.cancel-submit-comment {
+	position: absolute;
+	top: 15px;
+	font-size: 25px;
+	color: red;
+	cursor: pointer;
+}

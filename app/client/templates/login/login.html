@@ -1,0 +1,24 @@
+<template name="Login">
+	{{#if currentUser}}
+		<p>You're logged in.</p>
+	{{else}}
+		{{> register}}
+		{{> auth}}
+	{{/if}}
+</template>
+
+<template name="register">
+	<form>
+        <input type="email" name="registerEmail">
+        <input type="password" name="registerPassword">
+        <input type="submit" value="Register">
+    </form>
+</template>
+
+<template name="auth">
+	<form>
+        <input type="email" name="loginEmail">
+        <input type="password" name="loginPassword">
+        <input type="submit" value="Login">
+    </form>
+</template>
