@@ -56,7 +56,7 @@ ZenPen.editor = (function() {
 		    }
 		}, false);
 
-		document.onkeydown = function( ev ) {
+		contentField.onkeydown = function( ev ) {
 			if(ev.keyCode == '9') {
 				ev.preventDefault();
 				var sel = document.getSelection();
@@ -97,7 +97,7 @@ ZenPen.editor = (function() {
 				checkTextHighlighting( event );
 			}, 1);
 		};
-		
+
 		// Window bindings
 		window.addEventListener( 'resize', function( event ) {
 			updateBubblePosition();

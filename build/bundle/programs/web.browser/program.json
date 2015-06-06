@@ -1,0 +1,209 @@
+{
+  "format": "web-program-pre1",
+  "manifest": [
+    {
+      "path": "02c8c973162c569f4e5cf67c1045b4f82f406b7e.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/02c8c973162c569f4e5cf67c1045b4f82f406b7e.js",
+      "size": 708210,
+      "hash": "02c8c973162c569f4e5cf67c1045b4f82f406b7e"
+    },
+    {
+      "path": "3566363c91daca09bbf5487976bb54c58809c9da.css",
+      "where": "client",
+      "type": "css",
+      "cacheable": true,
+      "url": "/3566363c91daca09bbf5487976bb54c58809c9da.css?meteor_css_resource=true",
+      "size": 148001,
+      "hash": "3566363c91daca09bbf5487976bb54c58809c9da"
+    },
+    {
+      "path": "packages/d0minikk_materialize-meteor/materialize/font/roboto/Roboto-Bold.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/d0minikk_materialize-meteor/materialize/font/roboto/Roboto-Bold.ttf",
+      "size": 127744,
+      "hash": "47327df0f35e7cd7c8645874897a7449697544ae"
+    },
+    {
+      "path": "packages/d0minikk_materialize-meteor/materialize/font/roboto/Roboto-Light.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/d0minikk_materialize-meteor/materialize/font/roboto/Roboto-Light.ttf",
+      "size": 126792,
+      "hash": "e321c183e2b75ee19813892b7bac8d7c411cb88a"
+    },
+    {
+      "path": "packages/d0minikk_materialize-meteor/materialize/font/roboto/Roboto-Medium.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/d0minikk_materialize-meteor/materialize/font/roboto/Roboto-Medium.ttf",
+      "size": 127488,
+      "hash": "6060ca726b9760b76f7c347dce9d2fa1fe42ec92"
+    },
+    {
+      "path": "packages/d0minikk_materialize-meteor/materialize/font/roboto/Roboto-Regular.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/d0minikk_materialize-meteor/materialize/font/roboto/Roboto-Regular.ttf",
+      "size": 126072,
+      "hash": "824b5480c977a8166e177e5357d13164ccc45f47"
+    },
+    {
+      "path": "packages/d0minikk_materialize-meteor/materialize/font/roboto/Roboto-Thin.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/d0minikk_materialize-meteor/materialize/font/roboto/Roboto-Thin.ttf",
+      "size": 127584,
+      "hash": "173ed64528b4d010a76d8d38deb1d7e7eed58eda"
+    },
+    {
+      "path": "packages/d0minikk_materialize-meteor/materialize/font/material-design-icons/Material-Design-Icons.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/d0minikk_materialize-meteor/materialize/font/material-design-icons/Material-Design-Icons.eot",
+      "size": 141748,
+      "hash": "5b769d54a3c3f67cdbbe0d798b018d7903d14e1b"
+    },
+    {
+      "path": "packages/d0minikk_materialize-meteor/materialize/font/material-design-icons/Material-Design-Icons.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/d0minikk_materialize-meteor/materialize/font/material-design-icons/Material-Design-Icons.svg",
+      "size": 330132,
+      "hash": "cca9f54d4f77567a1081eb3bae99b847df7daf9b"
+    },
+    {
+      "path": "packages/d0minikk_materialize-meteor/materialize/font/material-design-icons/Material-Design-Icons.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/d0minikk_materialize-meteor/materialize/font/material-design-icons/Material-Design-Icons.ttf",
+      "size": 141528,
+      "hash": "a76e6a868bd3632392872272032cc22ade12090a"
+    },
+    {
+      "path": "packages/d0minikk_materialize-meteor/materialize/font/material-design-icons/Material-Design-Icons.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/d0minikk_materialize-meteor/materialize/font/material-design-icons/Material-Design-Icons.woff",
+      "size": 141604,
+      "hash": "e7fdf38f5e9eeb468db71f39e449feb8752d0e89"
+    },
+    {
+      "path": "app/.gitkeep",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/.gitkeep",
+      "size": 1,
+      "hash": "adc83b19e793491b1c6ea0fd8b46cd9f32e592fc"
+    },
+    {
+      "path": "app/fonts/Lora-Bold.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/fonts/Lora-Bold.ttf",
+      "size": 230092,
+      "hash": "108001983cd46eae91ada8ee77deb4a91e40a9aa"
+    },
+    {
+      "path": "app/fonts/Lora-BoldItalic.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/fonts/Lora-BoldItalic.ttf",
+      "size": 232472,
+      "hash": "073ca183b2835f9651d2cdbaca394d1cf32d2751"
+    },
+    {
+      "path": "app/fonts/Lora-Italic.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/fonts/Lora-Italic.ttf",
+      "size": 226200,
+      "hash": "e68ee46c917c6c7406a918396c791a378c70e561"
+    },
+    {
+      "path": "app/fonts/Lora-Regular.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/fonts/Lora-Regular.ttf",
+      "size": 227700,
+      "hash": "5fa1ded5de4ce864556c861c2ba6f4ec19e1a21a"
+    },
+    {
+      "path": "app/fonts/icomoon.dev.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/fonts/icomoon.dev.svg",
+      "size": 5301,
+      "hash": "6304e2c4b0c878f2452d22efd1ea1a83d5f81365"
+    },
+    {
+      "path": "app/fonts/icomoon.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/fonts/icomoon.eot",
+      "size": 2544,
+      "hash": "fb41d1255106e7b05bbd307eef4e6710d384b5d5"
+    },
+    {
+      "path": "app/fonts/icomoon.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/fonts/icomoon.svg",
+      "size": 5038,
+      "hash": "ba37e56e21e581d6c78fe5753fa221dc58cb38a9"
+    },
+    {
+      "path": "app/fonts/icomoon.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/fonts/icomoon.ttf",
+      "size": 2380,
+      "hash": "a6f56a97cc5720dfd21c7b2601ff03b46d3a5c5c"
+    },
+    {
+      "path": "app/fonts/icomoon.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/fonts/icomoon.woff",
+      "size": 2664,
+      "hash": "9e18d3e3af77616f99c0ca2ada9c2b732f036289"
+    },
+    {
+      "path": "app/fonts/lora.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/fonts/lora.ttf",
+      "size": 227700,
+      "hash": "5fa1ded5de4ce864556c861c2ba6f4ec19e1a21a"
+    },
+    {
+      "path": "head.html",
+      "where": "internal",
+      "type": "head",
+      "hash": "baf9975e0a4edc2e5854bcdc28133747b52ea9ad"
+    }
+  ]
+}
