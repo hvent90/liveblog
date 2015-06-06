@@ -26,6 +26,8 @@ Router.route('/:name', {
     if (Meteor.userId()) {
         if (this.params.name == Meteor.user().username) {
             this.render('Home');
+        } else {
+          this.render('View');
         }
     } else {
 
@@ -38,13 +40,13 @@ Router.route('/:name', {
     if (Meteor.userId()) {
         if (this.params.name == Meteor.user().username) {
             return Meteor.subscribe("postsByUserBroadcast", this.params.name);
+        } else {
+          return Meteor.subscribe("postsByUser", this.params.name);
         }
     } else {
 
       return Meteor.subscribe("postsByUser", this.params.name);
     }
-
-
   }
 });
 
