@@ -22,23 +22,28 @@ Router.route('/:name/broadcast', {
 Router.route('/:name', {
   name: 'view',
   controller: 'ViewController',
-  action: 'action',
-  where: 'client',
-  onBeforeAction: function() {
+  action: function() {
     if (Meteor.userId()) {
         if (this.params.name == Meteor.user().username) {
-            console.log('we here????');
-            // console.log('/' + this.params.name + '/broadcast');
-            Router.go('/' + this.params.name + '/broadcast');
+            this.render('Home');
         }
+    } else {
+
+      this.render('View');
     }
 
-    this.next();
   },
+  where: 'client',
   waitOn: function(){
-    // waitOn makes sure that this publication is ready before rendering your template
+    if (Meteor.userId()) {
+        if (this.params.name == Meteor.user().username) {
+            return Meteor.subscribe("postsByUserBroadcast", this.params.name);
+        }
+    } else {
 
-    return Meteor.subscribe("postsByUser", this.params.name);
+      return Meteor.subscribe("postsByUser", this.params.name);
+    }
+
 
   }
 });
