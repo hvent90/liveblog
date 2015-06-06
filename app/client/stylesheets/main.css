@@ -12,7 +12,7 @@ body {
 section {
 	padding: 20px;
 	height: initial;
-	max-width: 800px;
+	max-width: 700px;
 }
 
 article {
@@ -28,18 +28,18 @@ article {
 }
 
 #login-buttons.login-buttons-dropdown-align-right #login-dropdown-list {
-  background-color: #ffccbc;
-  border: 1px solid #ffccbc;
+  background-color: #D7F2FF;
+  border: 1px solid #FFFFFF;
   color: rgb(61, 61, 61);
 }
 
 #login-buttons .login-button, .accounts-dialog .login-button {
-	background: #8C5D53;
-	border: 1px solid #8C5D53;
+	background: rgba(111, 151, 171, 0.81);
+	border: 1px solid rgba(0, 0, 0, 0.14);
 }
 
 #login-buttons .login-button:hover, .accounts-dialog .login-button:hover {
-	background: #4e342e;
+	background: #58869D;
 }
 
 #login-buttons input, .accounts-dialog input {
