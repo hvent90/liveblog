@@ -8,6 +8,6 @@ Accounts.ui.config({
 Accounts.onLogin(function() {
 
 	if (Router.current().route._path == '' || Router.current().route._path == '/') {
-		Router.go('/' + Meteor.user().username + '/broadcast');
+		Router.go('/' + Meteor.user().username);
 	}
 });
