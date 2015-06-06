@@ -37,6 +37,26 @@ ZenPen.editor = (function() {
 	function createEventBindings() {
 
 		contentField.addEventListener('keypress', function(ev){
+			if (contentField.innerText.length == 0) {
+				document.execCommand('formatBlock', false, 'p');
+		    	var paragraph = window.getSelection().anchorNode;
+		    	paragraph.className = 'content-block';
+
+		    	numberTheContentBlocks(document.querySelectorAll('.content-block'));
+			}
+
+		    if(ev.keyCode == '13') {
+		        document.execCommand('defaultParagraphSeparator', false, 'p');
+		    	var paragraph = window.getSelection().anchorNode;
+		    	paragraph.className = 'content-block';
+
+		    	setTimeout(function() {
+		    		numberTheContentBlocks(document.querySelectorAll('.content-block'));
+		    	}, 100)
+		    }
+		}, false);
+
+		document.onkeydown = function( ev ) {
 			if(ev.keyCode == '9') {
 				ev.preventDefault();
 				var sel = document.getSelection();
@@ -56,25 +76,7 @@ ZenPen.editor = (function() {
 	            sel.removeAllRanges();
 	            sel.addRange(range);
 			}
-
-			if (contentField.innerText.length == 0) {
-				document.execCommand('formatBlock', false, 'p');
-		    	var paragraph = window.getSelection().anchorNode;
-		    	paragraph.className = 'content-block';
-
-		    	numberTheContentBlocks(document.querySelectorAll('.content-block'));
-			}
-
-		    if(ev.keyCode == '13') {
-		        document.execCommand('defaultParagraphSeparator', false, 'p');
-		    	var paragraph = window.getSelection().anchorNode;
-		    	paragraph.className = 'content-block';
-
-		    	setTimeout(function() {
-		    		numberTheContentBlocks(document.querySelectorAll('.content-block'));
-		    	}, 100)
-		    }
-		}, false);
+		}
 		// Key up bindings
 		if ( ZenPen.util.supportsHtmlStorage() ) {
 
