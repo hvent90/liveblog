@@ -121,7 +121,7 @@ ZenPen.ui = (function() {
 		// aboutButton.onclick = onAboutButtonClick;
 
 		header = document.querySelector( '.header' );
-		// header.onkeypress = onHeaderKeyPress;
+		header.onkeypress = onHeaderKeyPress;
 	}
 
 	function onScreenSizeClick( event ) {

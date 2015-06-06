@@ -17,6 +17,8 @@ Template.Landing.created = function () {
 };
 
 Template.Landing.rendered = function () {
+	var headerJaun = document.getElementById('headerJaun');
+	headerJaun.focus();
 };
 
 Template.Landing.destroyed = function () {

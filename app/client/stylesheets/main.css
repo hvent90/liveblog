@@ -10,7 +10,13 @@ body {
 }
 
 section {
-	padding-top: 20px;
+	padding: 20px;
+	height: initial;
+	max-width: 800px;
+}
+
+article {
+	min-height: 20%;
 }
 
 #login-buttons a, .accounts-dialog a {

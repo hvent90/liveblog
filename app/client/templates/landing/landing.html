@@ -22,67 +22,14 @@
 			</div>
 		</div>
 
-		<!-- <div class="ui">
-
-			<div class="wrapper">
-
-				<div class="top editing">
-					<button class="fullscreen useicons" title="Toggle fullscreen">
-						&#xe000;
-					</button>
-
-					<button class="color-flip useicons" title="Invert colors">
-						&#xe002;
-					</button>
-
-					<button class="target useicons" title="Set target word count">
-						&#xe001;
-					</button>
-					<button class="save useicons" title="Save Text">
-						&#xe003;
-					</button>
-				</div>
-
-				<div class="bottom">
-					<button class="about">
-						?
-					</button>
-				</div>
-			</div>
-		</div>
-
-		<div class="word-counter">
-			<span class="progress"></span>
-		</div> -->
-
 		<section>
-				<header contenteditable="true" class="header">
-					Dis some shit
+				<header  id="headerJaun" contenteditable="true" class="header">
+					Welcome to Typo
 				</header>
 
 				<article contenteditable="true" class="content">
 
-					<p>
-						A minimalist writing zone, where you can block out all distractions and get to what's important. The writing!
-					</p>
-
-					<p>
-						To get started, all you need to do is delete this text (seriously, just highlight it and hit delete), and fill the page with your own fantastic words.
-					</p>
-
-					<p>
-						You can use <b>bold</b>, <i>italics</i>, <b><i>both</i></b> and <a href="http://zenpen.io"> urls </a> just by highlighting the text and selecting them from the tiny options box that appears above it.
-					</p>
-
-					<blockquote>
-						Quotes are easy to add too!
-					</blockquote>
-
-					<p>
-						For <i>questions</i> and <b>open source info</b>, Click that little question mark at the bottom left of the screen.
-					</p>
-
-					<p>Happy Typing! ~ <b>Tim Holman (@twholman)</b></p>
+					<p id="focusJaun" class="p1">Typo is a place to write freely, so begin typing!<br></p><p class="p1"><span class="s1">You can use&nbsp;<b>bold</b>,&nbsp;<i>italics</i>, and&nbsp;create&nbsp;<a href="http://www.typo.space/"><span class="s2"><b>links</b></span></a>&nbsp;by simply highlighting text.</span></p><blockquote><span class="s1">Quotes are easy to add too!</span></blockquote><p class="p1"></p><p class="p1"><span class="s1">To get started, click the button on the top right to register.</span></p>
 
 				</article>
 
@@ -92,7 +39,10 @@
 		<script type="text/javascript">
 	        // Initiate ZenPen
 	        ZenPen.editor.init();
-	    	// ZenPen.ui.init();
+	        // ZenPen.ui.init();
+	        $(document).ready(function() {
+	        	$('#headerJaun').focus();
+	        });
         </script>
 	</body>
 </template>

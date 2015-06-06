@@ -118,6 +118,8 @@ ZenPen.editor = (function() {
 	function bindElements() {
 
 		headerField = document.querySelector( '.header' );
+		headerField.onkeypress = onHeaderKeyPress;
+
 		contentField = document.querySelector( '.content' );
 		textOptions = document.querySelector( '.text-options' );
 
@@ -138,6 +140,15 @@ ZenPen.editor = (function() {
 		urlInput = textOptions.querySelector( '.url-input' );
 		urlInput.onblur = onUrlInputBlur;
 		urlInput.onkeydown = onUrlInputKeyDown;
+	}
+
+	/* Allows the user to press enter to tab from the title */
+	function onHeaderKeyPress( event ) {
+
+		if ( event.keyCode === 13 ) {
+			event.preventDefault();
+			contentField.focus();
+		}
 	}
 
 	function numberTheContentBlocks(contentBlockNodes) {
