@@ -2,6 +2,37 @@
 /* Server Only Methods */
 /*****************************************************************************/
 Meteor.methods({
+	'createInsertionInstruction': function(content, parentPostId, caretPosition, sessionNumber, insertionType) {
+		var currentUserId = this.userId;
+		console.log(parentPostId);
+		console.log(caretPosition);
+
+		Instructions.insert({
+			action: {
+				type: insertionType,
+				data: content
+			},
+			postId: parentPostId,
+			caretPosition: caretPosition,
+			createdBy: currentUserId,
+			createdAt: new Date().getTime(),
+			sessionId: sessionNumber
+		});
+	},
+	'createDeletionInstruction': function(lengthOfSelection, parentPostId, caretPosition, sessionNumber) {
+		var currentUserId = this.userId;
+
+		Instructions.insert({
+			action: {
+				type: 'deletion',
+				data: lengthOfSelection
+			},
+			postId: parentPostId,
+			createdBy: currentUserId,
+			createdAt: new Date().getTime(),
+			sessionId: sessionNumber
+		});
+	},
 	'createComment': function(textData, parentPostId) {
 		var currentUserId = this.userId;
 
@@ -11,7 +42,8 @@ Meteor.methods({
 		Comments.insert({
 			postTextData: textData,
 			postId: parentPostId,
-			createdBy: currentUserId
+			createdBy: currentUserId,
+			createdAt: new Date().getTime()
 		});
 	},
 	'createPost': function(headerContent, bodyContent, currentUserId) {
@@ -28,6 +60,7 @@ Meteor.methods({
 	},
 	'insertPostData': function(postId, type, content, contentBlocks) {
 		var currentUserId = this.userId;
+		console.log(type);
 
 		if (type == 'header') {
 			Posts.update({

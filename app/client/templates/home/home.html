@@ -22,84 +22,12 @@
 			</div>
 		</div>
 
-		<!-- <div class="ui">
-
-			<div class="wrapper">
-
-				<div class="top editing">
-					<button class="fullscreen useicons" title="Toggle fullscreen">
-						&#xe000;
-					</button>
-
-					<button class="color-flip useicons" title="Invert colors">
-						&#xe002;
-					</button>
-
-					<button class="target useicons" title="Set target word count">
-						&#xe001;
-					</button>
-					<button class="save useicons" title="Save Text">
-						&#xe003;
-					</button>
-				</div>
-
-				<div class="bottom">
-					<button class="about">
-						?
-					</button>
-				</div>
-			</div>
-		</div>
-
-		<div class="word-counter">
-			<span class="progress"></span>
-		</div> -->
-
 		<section>
+				{{ #with post }}
+					<header contenteditable="true" class="header">{{header}}</header>
 
-				{{ #each posts  }}
-					<header contenteditable="true" class="header">
-						{{ header }}
-					</header>
-
-					<article contenteditable="true" id="{{ _id }}" class="content">
-						{{{ body }}}
-						{{ rangy }}
-					</article>
-					<!-- <input class="button" type="submit" value="delete"> -->
-				{{ /each }}
-
-				<!-- <header contenteditable="true" class="header">
-					Dis some shit
-				</header>
-
-				<article contenteditable="true" class="content">
-
-					<p>
-						A minimalist writing zone, where you can block out all distractions and get to what's important. The writing!
-					</p>
-
-					<p>
-						To get started, all you need to do is delete this text (seriously, just highlight it and hit delete), and fill the page with your own fantastic words.
-					</p>
-
-					<p>
-						You can use <b>bold</b>, <i>italics</i>, <b><i>both</i></b> and <a href="http://zenpen.io"> urls </a> just by highlighting the text and selecting them from the tiny options box that appears above it.
-					</p>
-
-					<blockquote>
-						Quotes are easy to add too!
-					</blockquote>
-
-					<p>
-						For <i>questions</i> and <b>open source info</b>, Click that little question mark at the bottom left of the screen.
-					</p>
-
-					<p>Happy Typing! ~ <b>Tim Holman (@twholman)</b></p>
-
-				</article> -->
-			<!-- {{/if}} -->
-
+					<article contenteditable="true" id="{{ _id }}" class="content">{{{body}}}</article>
+				{{/with}}
 		</section>
 
 		<!-- JS -->

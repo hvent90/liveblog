@@ -4,20 +4,20 @@ Router.configure({
   notFoundTemplate: 'NotFound'
 });
 
-Router.route('/:name/broadcast', {
-  name: 'home',
-  controller: 'HomeController',
-  action: 'action',
-  where: 'client',
-  waitOn: function(){
-    // waitOn makes sure that this publication is ready before rendering your template
-    // return [
-    //   Meteor.subscribe("thePosts"),
-    //   Meteor.subscribe("theComments")
-    // ];
-    return Meteor.subscribe("postsByUserBroadcast", this.params.name);
-  },
-});
+// Router.route('/:name/broadcast', {
+//   name: 'home',
+//   controller: 'HomeController',
+//   action: 'action',
+//   where: 'client',
+//   waitOn: function(){
+//     // waitOn makes sure that this publication is ready before rendering your template
+//     // return [
+//     //   Meteor.subscribe("thePosts"),
+//     //   Meteor.subscribe("theComments")
+//     // ];
+//     return Meteor.subscribe("postsByUserBroadcast", this.params.name);
+//   },
+// });
 
 Router.route('/:name', {
   name: 'view',

@@ -4,6 +4,15 @@ Meteor.publish('thePosts', function() {
     return Posts.find({createdBy: currentUserId});
 });
 
+Meteor.publish('postInstructions', function(parentPostId, date) {
+    return Instructions.find({
+    	postId: parentPostId,
+    	createdAt: {
+    		$gte: date
+    	}
+    });
+});
+
 Meteor.publish('postsByUserBroadcast', function(name) {
 	console.log(name);
 	var user = Meteor.users.findOne({ username: name });
